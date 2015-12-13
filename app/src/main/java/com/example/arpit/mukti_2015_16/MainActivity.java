@@ -31,7 +31,9 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         i=(ImageButton)findViewById(R.id.imageButton1);
 
-        setSupportActionBar(toolbar);
+        //setSupportActionBar(toolbar);
+        toolbar.setLogo(R.drawable.home3);
+        toolbar.setTitle("MUKTI 2016");
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

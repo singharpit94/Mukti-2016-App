@@ -29,7 +29,7 @@ public class First extends AppCompatActivity implements NavigationView.OnNavigat
         setContentView(R.layout.hello_fragment_layout);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setLogo(R.drawable.olympicmedal);
+        toolbar.setLogo(R.drawable.home3);
         toolbar.setTitle("MUKTI 2016");
      //  setSupportActionBar(toolbar);
 

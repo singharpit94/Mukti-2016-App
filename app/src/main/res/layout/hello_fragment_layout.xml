@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:background="@color/colorBar"
+            android:background="#ff0000"
             android:elevation="6dp"
 
             android:minHeight="?attr/actionBarSize"
@@ -32,8 +32,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/toolbar"
-            android:background="?attr/colorPrimary"
+            android:background="#000000"
             android:elevation="6dp"
+
             android:minHeight="?attr/actionBarSize"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:tabGravity="fill"

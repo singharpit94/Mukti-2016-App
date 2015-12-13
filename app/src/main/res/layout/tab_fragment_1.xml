@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/ScrollView01"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
-
-<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
     android:orientation="vertical"
-    android:background="@color/colorPrimary">
+    android:background="#c0c0c0">
 
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="190dp"
 
         android:background="@mipmap/offline_events"
@@ -23,7 +24,7 @@
         android:layout_alignParentTop="true" />
     <TextView
         android:id="@+id/text_id"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
         android:capitalize="characters"
         android:text="hello_worldjdjdfjdhjdcncnxmc\ndjdjsdjsdjsdjshbbbnbnbnjhhjhj"
@@ -38,9 +39,16 @@
         android:background="#ffffff"/>
 
     <Button
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="75dp"
         android:text="Rules and Regulation"
+        android:textColor="#ffffff"
+        android:background="#7B68EE"
+        android:textAlignment="center"
+
+
+        android:textAllCaps="true"
+        android:textSize="15dp"
         android:id="@+id/button1"
         android:layout_marginLeft="0dp"
         android:layout_marginStart="0dp"
@@ -51,10 +59,11 @@
         ></Button>
     <TextView
         android:id="@+id/text_id2"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:capitalize="characters"
-        android:text="<font color=#cc0029>Erste Farbe</font> <font color=#ffcc00>zweite Farbe</font>"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:text="ndjcjdcjvncjvc"
         android:textColor="#000000"
 
         android:textSize="20dp"
@@ -62,14 +71,17 @@
         android:layout_below="@+id/button1"
         android:layout_alignLeft="@+id/imageView1"
         android:layout_alignStart="@+id/imageView1"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="5dp"
         android:background="#ffffff"/>
     <Button
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="75dp"
         android:text="Contact Cordinator"
+        android:textColor="#ffffff"
         android:id="@+id/button2"
         android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:background="#0000CD"
         android:layout_marginStart="0dp"
         android:layout_below="@+id/text_id2"
         android:layout_alignLeft="@+id/text_id"
