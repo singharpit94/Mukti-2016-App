@@ -29,7 +29,7 @@ public class SpalshScreenActivity extends Activity {
             public void run(){
                 try{
 
-                    sleep(3000);
+                    sleep(4000);
                 }catch(InterruptedException e){
                     e.printStackTrace();
                 }finally{
