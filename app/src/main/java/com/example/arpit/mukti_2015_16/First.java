@@ -43,10 +43,10 @@ public class First extends AppCompatActivity implements NavigationView.OnNavigat
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("Tabfdfdffdfd 1"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tabfdfdfdfdf 2"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tabfdfdfdfdfd 3"));
-        tabLayout.addTab(tabLayout.newTab().setText("Tabfdfdfdfdfd 4"));
+        tabLayout.addTab(tabLayout.newTab().setText("Online Treasure Hunt"));
+        tabLayout.addTab(tabLayout.newTab().setText("Code-Cracker"));
+        tabLayout.addTab(tabLayout.newTab().setText("Freepl"));
+        tabLayout.addTab(tabLayout.newTab().setText("Freemex"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);

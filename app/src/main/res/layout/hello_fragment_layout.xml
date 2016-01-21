@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:background="#ff0000"
+            android:background="#c63"
             android:elevation="6dp"
 
             android:minHeight="?attr/actionBarSize"
@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/toolbar"
-            android:background="#000000"
+            android:background="#3b3738"
             android:elevation="6dp"
 
             android:minHeight="?attr/actionBarSize"

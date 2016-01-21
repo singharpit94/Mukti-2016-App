@@ -30,7 +30,7 @@ public class TabFragment1 extends Fragment implements View.OnClickListener {
         // custom dialog
         final Dialog dialog = new Dialog(getContext());
         dialog.setContentView(R.layout.custom);
-        dialog.setTitle("Co-ordinators");
+        dialog.setTitle("             Co-ordinators");
         dialog.setCanceledOnTouchOutside(false);
 
 

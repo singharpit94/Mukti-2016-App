@@ -9,7 +9,7 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:orientation="vertical"
-    android:background="#c0c0c0">
+    android:background="@drawable/bor">
 
 
     <ImageView
@@ -43,7 +43,7 @@
         android:layout_height="75dp"
         android:text="Rules and Regulation"
         android:textColor="#ffffff"
-        android:background="#7B68EE"
+        android:background="#3b3738"
         android:textAlignment="center"
 
 
@@ -81,7 +81,7 @@
         android:id="@+id/button2"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="10dp"
-        android:background="#0000CD"
+        android:background="#3b3738"
         android:layout_marginStart="0dp"
         android:layout_below="@+id/text_id2"
         android:layout_alignLeft="@+id/text_id"
