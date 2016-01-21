@@ -9,7 +9,7 @@
 
             />
         <item android:id="@+id/nav_Sponsers" android:icon="@drawable/handshake"
-            android:title="Sponsers" />
+            android:title="Sponsers"  />
         <item android:id="@+id/nav_onevents" android:icon="@drawable/onlinesupport"
             android:title="Online Events" />
         <item android:id="@+id/nav_offevents" android:icon="@drawable/olympicmedal"
@@ -21,7 +21,7 @@
         <item android:id="@+id/Contacts" android:icon="@drawable/stackofphotos"
             android:title="Contacts" />
         <item android:id="@+id/nav_register" android:icon="@drawable/key"
-            android:title="Register" />
+            android:title="Updates" />
     </group>
 
 

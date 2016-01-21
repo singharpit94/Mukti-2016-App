@@ -99,7 +99,7 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:id="@+id/imageButton4"
-            android:background="@drawable/gu"
+            android:background="@drawable/guu"
             android:layout_marginLeft="0dp"
             android:layout_marginStart="0dp"
             android:layout_below="@id/imageButton2"
@@ -110,7 +110,7 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:id="@+id/imageButton6"
-            android:background="@drawable/sponsors"
+            android:background="@drawable/spoo"
             android:layout_marginLeft="0dp"
             android:layout_marginStart="0dp"
             android:layout_below="@id/imageButton4"
@@ -128,7 +128,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:background="@drawable/reachus"
+            android:background="@drawable/mpp"
             android:id="@+id/button1"
 
             android:layout_alignParentLeft="true"
@@ -154,7 +154,7 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:background="@drawable/schedule"
+            android:background="@drawable/upp"
             android:id="@+id/button2"
 
             android:layout_alignParentLeft="true"
