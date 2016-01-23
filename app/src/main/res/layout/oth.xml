@@ -65,7 +65,7 @@ Come with us, and unravel the secret treasure hidden somewhere in the world of F
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:textAlignment="center"
-        android:textAllCaps="true"
+
         android:text=" Connect the pictures, look for clues in the page source and remember,Google Is Your Friend!\n\n\n
 
 

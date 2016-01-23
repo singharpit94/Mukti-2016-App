@@ -12,22 +12,25 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+
+
+
 /**
  * Created by arpit on 12/12/15.
  */
-public class Online extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class Offline extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.online);
+        setContentView(R.layout.offline);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setLogo(R.drawable.home3);
         toolbar.setTitle("MUKTI 2016");
-     //  setSupportActionBar(toolbar);
+        //  setSupportActionBar(toolbar);
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -39,14 +42,15 @@ public class Online extends AppCompatActivity implements NavigationView.OnNaviga
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("Online Treasure Hunt"));
-        tabLayout.addTab(tabLayout.newTab().setText("Code-Cracker"));
-        tabLayout.addTab(tabLayout.newTab().setText("Freepl"));
-        tabLayout.addTab(tabLayout.newTab().setText("Freemex"));
+        tabLayout.addTab(tabLayout.newTab().setText("Connectify"));
+        tabLayout.addTab(tabLayout.newTab().setText("Incanity"));
+        tabLayout.addTab(tabLayout.newTab().setText("Lipi"));
+        tabLayout.addTab(tabLayout.newTab().setText("Behind The Scenes"));
+        tabLayout.addTab(tabLayout.newTab().setText("Fantasy-Football"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
-        final OnlinePageViewer adapter = new OnlinePageViewer
+        final OfflinePageViewer adapter = new OfflinePageViewer
                 (getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
@@ -130,5 +134,6 @@ public class Online extends AppCompatActivity implements NavigationView.OnNaviga
         return true;
     }
 }
+
 
 

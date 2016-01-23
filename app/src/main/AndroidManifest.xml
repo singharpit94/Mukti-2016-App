@@ -23,9 +23,20 @@
             android:name=".MainActivity"
 
             android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+            </intent-filter>
 
         </activity>
         <activity android:name=".Online"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Offline"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Sponsers"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Map"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 

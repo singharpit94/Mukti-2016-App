@@ -11,19 +11,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.view.View.OnClickListener;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-       ImageButton i;
+       ImageButton online,offline,sponser;
+    Button map;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        i=(ImageButton)findViewById(R.id.imageButton1);
+        online=(ImageButton)findViewById(R.id.imageButton1);
+        offline=(ImageButton)findViewById(R.id.imageButton2);
+        sponser=(ImageButton)findViewById(R.id.imageButton6);
+        map=(Button)findViewById(R.id.button1);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        i=(ImageButton)findViewById(R.id.imageButton1);
 
         //setSupportActionBar(toolbar);
         toolbar.setLogo(R.drawable.home3);
@@ -38,10 +42,31 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        i.setOnClickListener(new OnClickListener() {
+        online.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myintent=new Intent(MainActivity.this,Online.class);
+                Intent myintent = new Intent(MainActivity.this, Online.class);
+                startActivity(myintent);
+            }
+        });
+        offline.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myintent = new Intent(MainActivity.this, Offline.class);
+                startActivity(myintent);
+            }
+        });
+        sponser.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myintent = new Intent(MainActivity.this, Sponsers.class);
+                startActivity(myintent);
+            }
+        });
+        map.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myintent = new Intent(MainActivity.this, Map.class);
                 startActivity(myintent);
             }
         });

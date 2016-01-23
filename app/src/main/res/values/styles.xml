@@ -16,6 +16,15 @@
     <style name="Arpit" >
         <item name="android:color">#000000</item>
     </style>
+    <style name="cust_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowTitleStyle">@style/dialog_title_style</item>
+    </style>
+
+    <style name="dialog_title_style" parent="android:Widget.TextView">
+        <item name="android:background">#c63</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">25dp</item>
+    </style>
 
 
 

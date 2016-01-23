@@ -10,13 +10,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-public class Codecra extends Fragment implements View.OnClickListener {
-
+public class Bts extends Fragment implements View.OnClickListener {
     View view;
     Button b;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view=inflater.inflate(R.layout.codecra, container, false);
+        view=inflater.inflate(R.layout.bts, container, false);
         b=(Button)view.findViewById(R.id.button2);
         b.setOnClickListener(this);
         return  view;
@@ -29,7 +28,7 @@ public class Codecra extends Fragment implements View.OnClickListener {
         // custom dialog
         final Dialog dialog = new Dialog(getContext(),R.style.cust_dialog);
         dialog.setContentView(R.layout.custom);
-        dialog.setTitle("             Co-ordinators");
+        dialog.setTitle("          Co-ordinators");
         dialog.setCanceledOnTouchOutside(false);
 
 
@@ -40,7 +39,8 @@ public class Codecra extends Fragment implements View.OnClickListener {
         Button dialogButton = (Button) dialog.findViewById(R.id.dialogButtonOK);
         // if button is clicked, close the custom dialog
         Button call=(Button)dialog.findViewById(R.id.cbutton);
-        call.setText("Archit Srivastav");
+        call.setText("Arpit Singh");
+
         dialogButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

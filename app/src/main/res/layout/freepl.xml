@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="190dp"
 
-            android:background="@mipmap/offline_events"
+            android:background="@drawable/fp"
 
 
             android:layout_centerHorizontal="true"
@@ -63,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:textAlignment="center"
-            android:textAllCaps="true"
+
             android:text="Select 11 players with a captain and form a team of a current match.\n\n The player with maximum points will be declared as the winner"
             android:textColor="#8B0000"
 

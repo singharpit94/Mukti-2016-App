@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="190dp"
 
-            android:background="@drawable/fx"
+            android:background="@drawable/bts"
 
 
             android:layout_centerHorizontal="true"
@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:capitalize="characters"
-            android:text="The name says it all free as in free of cost in FOSS.\n\n This is an unique type of online trading which allows you to buy and sell stocks"
+            android:text="Don't you hate it when the things you are passionate about fetch you no accolades? Well, this is an event where your genius in sports, music, movies, games and alike will help you unravel the biggest mystery of what lies behind the scenes "
             android:textColor="#8B0000"
             android:textStyle="bold"
 
@@ -64,7 +64,7 @@
             android:layout_height="200dp"
             android:textAlignment="center"
 
-            android:text="Player has to buy and sell stocks using the knowledge and status of current stocks.\n\nPlayer with maximum amount of points and stocks will be the winner"
+            android:text="Teams of two shall answer questions to get their inputs and deduce what happened behind the scenes to the input to obtain the respective outputs."
             android:textColor="#8B0000"
 
             android:textSize="20dp"

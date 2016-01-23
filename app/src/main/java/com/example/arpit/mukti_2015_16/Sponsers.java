@@ -1,33 +1,36 @@
 package com.example.arpit.mukti_2015_16;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.TabLayout;
 import android.support.v4.view.GravityCompat;
-import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 
 /**
- * Created by arpit on 12/12/15.
+ * Created by arpit on 24/1/16.
  */
-public class Online extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class Sponsers extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener  {
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.online);
+        setContentView(R.layout.sponsers);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        //setSupportActionBar(toolbar);
         toolbar.setLogo(R.drawable.home3);
         toolbar.setTitle("MUKTI 2016");
-     //  setSupportActionBar(toolbar);
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -38,34 +41,6 @@ public class Online extends AppCompatActivity implements NavigationView.OnNaviga
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("Online Treasure Hunt"));
-        tabLayout.addTab(tabLayout.newTab().setText("Code-Cracker"));
-        tabLayout.addTab(tabLayout.newTab().setText("Freepl"));
-        tabLayout.addTab(tabLayout.newTab().setText("Freemex"));
-        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
-
-        final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
-        final OnlinePageViewer adapter = new OnlinePageViewer
-                (getSupportFragmentManager(), tabLayout.getTabCount());
-        viewPager.setAdapter(adapter);
-        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                viewPager.setCurrentItem(tab.getPosition());
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
-            }
-        });
 
 
 
@@ -130,5 +105,3 @@ public class Online extends AppCompatActivity implements NavigationView.OnNaviga
         return true;
     }
 }
-
-

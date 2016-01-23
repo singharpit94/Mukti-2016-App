@@ -9,7 +9,11 @@
        android:layout_width="match_parent"
        android:layout_height="60dp"
        android:text=""
+       android:textSize="15dp"
+       android:textColor="#8B0000"
        android:id="@+id/cbutton"
+       android:textStyle="bold"
+       android:background="#DCDCDC"
        />
 
     <Button
@@ -17,6 +21,9 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text=" Cancel "
+        android:textStyle="bold"
+        android:textColor="#8B0000"
+        android:background="#DCDCDC"
         android:layout_below="@id/cbutton"
         android:layout_marginTop="-12dp"
 

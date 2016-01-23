@@ -63,7 +63,7 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:textAlignment="center"
-            android:textAllCaps="true"
+
             android:text="There will be a set of coding questions and the participant solving the most number of questions will be the winner\n\n
 Challenge is on Keep Coding!"
             android:textColor="#8B0000"

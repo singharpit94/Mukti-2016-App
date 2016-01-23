@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="190dp"
 
-            android:background="@drawable/fx"
+            android:background="@drawable/ff"
 
 
             android:layout_centerHorizontal="true"
@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:capitalize="characters"
-            android:text="The name says it all free as in free of cost in FOSS.\n\n This is an unique type of online trading which allows you to buy and sell stocks"
+            android:text="Ever Thought of making your dream xv Ever Thought of bringing players from different league together \n\n GLUG brings you the chance to make your squad of your fantasies and win prizes while having fun"
             android:textColor="#8B0000"
             android:textStyle="bold"
 
@@ -64,7 +64,7 @@
             android:layout_height="200dp"
             android:textAlignment="center"
 
-            android:text="Player has to buy and sell stocks using the knowledge and status of current stocks.\n\nPlayer with maximum amount of points and stocks will be the winner"
+            android:text="Round 1 consists of pen and paper round comprising questions from football\n\n Round 2 will be an bidding round where each group has to make a team of 15"
             android:textColor="#8B0000"
 
             android:textSize="20dp"

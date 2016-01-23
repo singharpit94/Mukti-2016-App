@@ -25,9 +25,9 @@ public class Oth extends Fragment implements View.OnClickListener {
 
 
         // custom dialog
-        final Dialog dialog = new Dialog(getContext());
+        final Dialog dialog = new Dialog(getContext(),R.style.cust_dialog);
         dialog.setContentView(R.layout.custom);
-        dialog.setTitle("             Co-ordinators");
+        dialog.setTitle("          Co-ordinators");
         dialog.setCanceledOnTouchOutside(false);
 
 
