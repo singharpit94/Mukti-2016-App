@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="190dp"
 
-        android:background="@mipmap/offline_events"
+        android:background="@drawable/othh"
 
 
         android:layout_centerHorizontal="true"
@@ -27,8 +27,11 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:capitalize="characters"
-        android:text="hello_worldjdjdfjdhjdcncnxmc\ndjdjsdjsdjsdjshbbbnbnbnjhhjhj"
-        android:textColor="#000000"
+        android:text="The exhilaration is back! Gear up as we take you for an exciting quest for “treasure” during MUKTI.
+
+Come with us, and unravel the secret treasure hidden somewhere in the world of Free and Open Source Software (FOSS)."
+        android:textColor="#8B0000"
+        android:textStyle="bold"
 
         android:textSize="20dp"
 
@@ -36,7 +39,7 @@
         android:layout_alignLeft="@+id/imageView1"
         android:layout_alignStart="@+id/imageView1"
         android:layout_marginTop="0dp"
-        android:background="#ffffff"/>
+        android:background="#DCDCDC"/>
 
     <Button
         android:layout_width="match_parent"
@@ -63,16 +66,19 @@
         android:layout_height="200dp"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:text="ndjcjdcjvncjvc"
-        android:textColor="#000000"
+        android:text=" Connect the pictures, look for clues in the page source and remember,Google Is Your Friend!\n\n\n
+
+
+The hunt is on!"
+        android:textColor="#8B0000"
 
         android:textSize="20dp"
-
+        android:textStyle="bold"
         android:layout_below="@+id/button1"
         android:layout_alignLeft="@+id/imageView1"
         android:layout_alignStart="@+id/imageView1"
         android:layout_marginTop="5dp"
-        android:background="#ffffff"/>
+        android:background="#DCDCDC"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="75dp"

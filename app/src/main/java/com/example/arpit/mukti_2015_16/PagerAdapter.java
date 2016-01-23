@@ -17,16 +17,16 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
 
         switch (position) {
             case 0:
-                TabFragment1 tab1 = new TabFragment1();
+                Oth tab1 = new Oth();
                 return tab1;
             case 1:
-                TabFragment2 tab2 = new TabFragment2();
+                Codecra tab2 = new Codecra();
                 return tab2;
             case 2:
-                TabFragment3 tab3 = new TabFragment3();
+                freemex tab3 = new freemex();
                 return tab3;
             case 3:
-                TabFragment4 tab4=new TabFragment4();
+                freepl tab4=new freepl();
                 return tab4;
             default:
                 return null;

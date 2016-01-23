@@ -19,7 +19,7 @@ import android.widget.ImageButton;
 /**
  * Created by arpit on 12/12/15.
  */
-public class First extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class Online extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
 
 

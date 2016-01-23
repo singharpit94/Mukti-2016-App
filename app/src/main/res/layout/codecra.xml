@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/bor">
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+
+            android:background="@drawable/cc"
+
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true" />
+        <TextView
+            android:id="@+id/text_id"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:capitalize="characters"
+            android:text="It is the flagship event where partcipation involves people from 50 countries across the world.\n \nThis is an online coding competition organised by GNU/LINUX USERS GROUP during MUKTI"
+            android:textColor="#8B0000"
+            android:textStyle="bold"
+
+            android:textSize="20dp"
+
+            android:layout_below="@+id/imageView1"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_alignStart="@+id/imageView1"
+            android:layout_marginTop="0dp"
+            android:background="#DCDCDC"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="Rules and Regulation"
+            android:textColor="#ffffff"
+            android:background="#3b3738"
+            android:textAlignment="center"
+
+
+            android:textAllCaps="true"
+            android:textSize="15dp"
+            android:id="@+id/button1"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/text_id"
+            android:layout_alignLeft="@+id/text_id"
+            android:layout_alignStart="@+id/text_id"
+            ></Button>
+        <TextView
+            android:id="@+id/text_id2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:text="There will be a set of coding questions and the participant solving the most number of questions will be the winner\n\n
+Challenge is on Keep Coding!"
+            android:textColor="#8B0000"
+
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/button1"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_alignStart="@+id/imageView1"
+            android:layout_marginTop="5dp"
+            android:background="#DCDCDC"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="Contact Cordinator"
+            android:textColor="#ffffff"
+            android:id="@+id/button2"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:background="#3b3738"
+            android:layout_marginStart="0dp"
+            android:layout_below="@+id/text_id2"
+            android:layout_alignLeft="@+id/text_id"
+            android:layout_alignStart="@+id/text_id"
+
+
+            android:layout_alignParentBottom="true"></Button>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
