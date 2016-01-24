@@ -9,16 +9,16 @@
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:orientation="vertical"
-        android:paddingTop="100dp"
+        android:paddingTop="25dp"
         android:background="@drawable/bor">
 
 
         <ImageView
             android:id="@+id/imageView1"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
+            android:layout_height="350dp"
 
-            android:background="@mipmap/offline_events"
+            android:background="#000000"
 
 
             android:layout_centerHorizontal="true"
@@ -26,11 +26,11 @@
         <TextView
             android:id="@+id/text_id"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="65dp"
             android:capitalize="characters"
-            android:text="President"
+            android:text="Art-Work Lead"
             android:textAlignment="center"
-            android:textColor="#000000"
+            android:textColor="#8B0000"
 
             android:textSize="50dp"
             android:layout_centerHorizontal="true"
@@ -38,7 +38,7 @@
             android:layout_alignLeft="@+id/imageView1"
             android:layout_alignStart="@+id/imageView1"
             android:layout_marginTop="0dp"
-            android:background="#ffffff"/>
+            android:background="#DCDCDC"/>
 
         <Button
             android:layout_width="150dp"
@@ -47,7 +47,7 @@
             android:textColor="#ffffff"
             android:background="#3b3738"
             android:textAlignment="center"
-
+            android:textStyle="bold"
 
             android:textAllCaps="true"
             android:textSize="15dp"

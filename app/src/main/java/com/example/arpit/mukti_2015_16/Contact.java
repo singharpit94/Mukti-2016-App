@@ -1,41 +1,32 @@
 package com.example.arpit.mukti_2015_16;
-
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.view.View.OnClickListener;
 
-import java.util.Locale;
+/**
+ * Created by arpit on 12/12/15.
+ */
+public class Contact extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
-       ImageButton online,offline,sponser,contact;
-    Button map;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        online=(ImageButton)findViewById(R.id.imageButton1);
-        offline=(ImageButton)findViewById(R.id.imageButton2);
-        sponser=(ImageButton)findViewById(R.id.imageButton6);
-        contact=(ImageButton)findViewById(R.id.imageButton5);
-        map=(Button)findViewById(R.id.button1);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setContentView(R.layout.contact);
 
-        //setSupportActionBar(toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setLogo(R.drawable.home3);
         toolbar.setTitle("MUKTI 2016");
+        //  setSupportActionBar(toolbar);
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -46,45 +37,39 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        online.setOnClickListener(new OnClickListener() {
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
+        tabLayout.addTab(tabLayout.newTab().setText("President"));
+        tabLayout.addTab(tabLayout.newTab().setText("Convener"));
+        tabLayout.addTab(tabLayout.newTab().setText("Treasurer"));
+        tabLayout.addTab(tabLayout.newTab().setText("General Secretary"));
+        tabLayout.addTab(tabLayout.newTab().setText("Tech-Head"));
+        tabLayout.addTab(tabLayout.newTab().setText("Developer"));
+        tabLayout.addTab(tabLayout.newTab().setText("Developer"));
+        tabLayout.addTab(tabLayout.newTab().setText("Designer"));
+        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+
+        final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
+        final ContactAdapter adapter = new ContactAdapter
+                (getSupportFragmentManager(), tabLayout.getTabCount());
+        viewPager.setAdapter(adapter);
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        tabLayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
-            public void onClick(View v) {
-                Intent myintent = new Intent(MainActivity.this, Online.class);
-                startActivity(myintent);
+            public void onTabSelected(TabLayout.Tab tab) {
+                viewPager.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
             }
         });
-        offline.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myintent = new Intent(MainActivity.this, Offline.class);
-                startActivity(myintent);
-            }
-        });
-        sponser.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myintent = new Intent(MainActivity.this, Sponsers.class);
-                startActivity(myintent);
-            }
-        });
-        map.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Uri gmmIntentUri = Uri.parse("geo:23.5496364,87.2911007");
-                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-                mapIntent.setPackage("com.google.android.apps.maps");
-                if (mapIntent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(mapIntent);
-                }
-            }
-        });
-        contact.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myintent = new Intent(MainActivity.this, Contact.class);
-                startActivity(myintent);
-            }
-        });
+
 
 
 
@@ -148,3 +133,4 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 }
+

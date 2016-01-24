@@ -38,6 +38,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Map"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Contact"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 
