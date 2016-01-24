@@ -1,8 +1,10 @@
 package com.example.arpit.mukti_2015_16;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,13 +17,18 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.view.View.OnClickListener;
+import android.widget.Toast;
 
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
        ImageButton online,offline,sponser,contact,workshop,guest;
-    Button map;
+    Button map,update;
+    SharedPreferences preferences;
+    SharedPreferences.Editor editor;
+    String s1=null;
+    int key;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,11 +41,13 @@ public class MainActivity extends AppCompatActivity
         guest=(ImageButton)findViewById(R.id.imageButton4);
 
         map=(Button)findViewById(R.id.button1);
+        update=(Button)findViewById(R.id.button2);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         //setSupportActionBar(toolbar);
         toolbar.setLogo(R.drawable.home3);
         toolbar.setTitle("MUKTI 2016");
+
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -49,6 +58,22 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        editor=preferences.edit();
+
+
+
+        key=0;
+        key=preferences.getInt("current", -1);
+        s1=preferences.getString("cu",null);
+        if(s1==null){
+            Toast.makeText(getApplicationContext(), "Integer", Toast.LENGTH_LONG).show();
+            editor.putInt("current", 0);
+            editor.putString("cu","Arpit");
+            editor.commit();
+        }
+
+        startService(new Intent(getBaseContext(), Notify.class));
         online.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -99,6 +124,13 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 Intent myintent = new Intent(MainActivity.this, GuestSpeaker.class);
+                startActivity(myintent);
+            }
+        });
+        update.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myintent = new Intent(MainActivity.this, Updates.class);
                 startActivity(myintent);
             }
         });

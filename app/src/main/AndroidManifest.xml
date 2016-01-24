@@ -3,6 +3,8 @@
     package="com.example.arpit.mukti_2015_16" >
     <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -44,6 +46,9 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".GuestSpeaker"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Updates"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <service android:name=".Notify" />
     </application>
 
 

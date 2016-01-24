@@ -26,13 +26,13 @@
         <TextView
             android:id="@+id/text_id"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="80dp"
             android:capitalize="characters"
-            android:text="Technical-Lead"
+            android:text="Abdur Rehman"
             android:textAlignment="center"
             android:textColor="#8B0000"
 
-            android:textSize="50dp"
+            android:textSize="30dp"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/imageView1"
             android:layout_alignLeft="@+id/imageView1"

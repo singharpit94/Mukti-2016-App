@@ -12,5 +12,5 @@
         android:layout_width="400dp"
         android:layout_height="400dp"
         android:id="@+id/logo"
-        android:background="@drawable/muktilogo"></ImageView>
+        android:background="@drawable/lmuk"></ImageView>
 </LinearLayout>
