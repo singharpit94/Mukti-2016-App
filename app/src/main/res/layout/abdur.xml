@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="350dp"
 
-            android:background="#000000"
+            android:background="@drawable/abdur"
 
 
             android:layout_centerHorizontal="true"

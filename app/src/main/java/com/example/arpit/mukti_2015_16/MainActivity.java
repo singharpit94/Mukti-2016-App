@@ -20,7 +20,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-       ImageButton online,offline,sponser,contact;
+       ImageButton online,offline,sponser,contact,workshop,guest;
     Button map;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,9 @@ public class MainActivity extends AppCompatActivity
         offline=(ImageButton)findViewById(R.id.imageButton2);
         sponser=(ImageButton)findViewById(R.id.imageButton6);
         contact=(ImageButton)findViewById(R.id.imageButton5);
+        workshop=(ImageButton)findViewById(R.id.imageButton3);
+        guest=(ImageButton)findViewById(R.id.imageButton4);
+
         map=(Button)findViewById(R.id.button1);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
@@ -82,6 +85,20 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 Intent myintent = new Intent(MainActivity.this, Contact.class);
+                startActivity(myintent);
+            }
+        });
+        workshop.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myintent = new Intent(MainActivity.this, Workshop.class);
+                startActivity(myintent);
+            }
+        });
+        guest.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myintent = new Intent(MainActivity.this, GuestSpeaker.class);
                 startActivity(myintent);
             }
         });

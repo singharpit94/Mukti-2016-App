@@ -40,6 +40,10 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Contact"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Workshop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".GuestSpeaker"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 

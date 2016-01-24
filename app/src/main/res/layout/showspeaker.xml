@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="100dp"
+        android:orientation="vertical"
+        android:background="@drawable/bor">
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+
+            android:background="@drawable/avlesh"
+
+
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true" />
+        <TextView
+            android:id="@+id/text_id"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:capitalize="characters"
+            android:text="Co-founder and CEO of WebEngage\nEx-burrp, ex-Onyomo, ex-HCL. Startup kid. Over 11 years of rich startup experience in products and technology. Open source guy. Salesman. Designer. Developer. Marketer."
+            android:textColor="#8B0000"
+            android:textStyle="bold"
+
+            android:textSize="20dp"
+
+            android:layout_below="@+id/imageView1"
+
+            android:layout_marginTop="0dp"
+            android:background="#DCDCDC"/>
+
+
+
+
+    </RelativeLayout>
+
