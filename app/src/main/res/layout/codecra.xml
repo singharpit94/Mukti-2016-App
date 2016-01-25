@@ -28,9 +28,9 @@
             android:layout_height="200dp"
             android:capitalize="characters"
             android:text="It is the flagship event where partcipation involves people from 50 countries across the world.\n \nThis is an online coding competition organised by GNU/LINUX USERS GROUP during MUKTI"
-            android:textColor="#8B0000"
+            android:textColor="#4B0082"
             android:textStyle="bold"
-
+            android:fontFamily="sans-serif"
             android:textSize="20dp"
 
             android:layout_below="@+id/imageView1"
@@ -66,8 +66,8 @@
 
             android:text="There will be a set of coding questions and the participant solving the most number of questions will be the winner\n\n
 Challenge is on Keep Coding!"
-            android:textColor="#8B0000"
-
+            android:textColor="#4B0082"
+            android:fontFamily="sans-serif"
             android:textSize="20dp"
             android:textStyle="bold"
             android:layout_below="@+id/button1"

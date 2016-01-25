@@ -1,5 +1,6 @@
 package com.example.arpit.mukti_2015_16;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -11,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 /**
  * Created by arpit on 12/12/15.
@@ -41,8 +43,8 @@ public class Online extends AppCompatActivity implements NavigationView.OnNaviga
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("Online Treasure Hunt"));
         tabLayout.addTab(tabLayout.newTab().setText("Code-Cracker"));
-        tabLayout.addTab(tabLayout.newTab().setText("Freepl"));
         tabLayout.addTab(tabLayout.newTab().setText("Freemex"));
+        tabLayout.addTab(tabLayout.newTab().setText("Freepl"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
@@ -75,12 +77,9 @@ public class Online extends AppCompatActivity implements NavigationView.OnNaviga
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
+        Intent myintent = new Intent(Online.this, MainActivity.class);
+        startActivity(myintent);
+        finish();
     }
 
     @Override
@@ -110,20 +109,47 @@ public class Online extends AppCompatActivity implements NavigationView.OnNaviga
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
-     /*   if (id == R.id.nav_camara) {
+        if (id == R.id.nav_home) {
+            Intent myintent = new Intent(Online.this, MainActivity.class);
+            startActivity(myintent);
+            finish();
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_Sponsers) {
+            Intent myintent = new Intent(Online.this, Sponsers.class);
+            startActivity(myintent);
+            finish();
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_onevents) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_offevents) {
+            Intent myintent = new Intent(Online.this, Offline.class);
+            startActivity(myintent);
+            finish();
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_workshops) {
+            Intent myintent = new Intent(Online.this, Workshop.class);
+            startActivity(myintent);
+            finish();
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_lectures) {
+            Intent myintent = new Intent(Online.this, GuestSpeaker.class);
+            startActivity(myintent);
+            finish();
 
-        }*/
+        }
+        else if (id == R.id.Contacts) {
+            Intent myintent = new Intent(Online.this, Contact.class);
+            startActivity(myintent);
+            finish();
+
+
+        }
+        else if (id == R.id.nav_updates) {
+            Intent myintent = new Intent(Online.this, Updates.class);
+            startActivity(myintent);
+            finish();
+
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

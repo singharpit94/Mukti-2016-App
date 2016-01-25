@@ -28,9 +28,9 @@
             android:layout_height="200dp"
             android:capitalize="characters"
             android:text="This is the time to prove yourself as a selecter.\n So bring out the superselecter in you and build the best team on the cricketing circuit will bring you the victory irrespective of foreign and domestic players"
-            android:textColor="#8B0000"
+            android:textColor="#4B0082"
             android:textStyle="bold"
-
+            android:fontFamily="sans-serif"
             android:textSize="20dp"
 
             android:layout_below="@+id/imageView1"
@@ -65,8 +65,8 @@
             android:textAlignment="center"
 
             android:text="Select 11 players with a captain and form a team of a current match.\n\n The player with maximum points will be declared as the winner"
-            android:textColor="#8B0000"
-
+            android:textColor="#4B0082"
+            android:fontFamily="sans-serif"
             android:textSize="20dp"
             android:textStyle="bold"
             android:layout_below="@+id/button1"

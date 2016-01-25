@@ -1,4 +1,5 @@
 package com.example.arpit.mukti_2015_16;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -78,12 +79,9 @@ public class Contact extends AppCompatActivity implements NavigationView.OnNavig
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
+        Intent myintent = new Intent(Contact.this, MainActivity.class);
+        startActivity(myintent);
+        finish();
     }
 
     @Override
@@ -114,19 +112,47 @@ public class Contact extends AppCompatActivity implements NavigationView.OnNavig
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-     /*   if (id == R.id.nav_camara) {
+        if (id == R.id.nav_home) {
+            Intent myintent = new Intent(Contact.this, MainActivity.class);
+            startActivity(myintent);
+            finish();
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_Sponsers) {
+            Intent myintent = new Intent(Contact.this, Sponsers.class);
+            startActivity(myintent);
+            finish();
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_onevents) {
+            Intent myintent = new Intent(Contact.this, Online.class);
+            startActivity(myintent);
+            finish();
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_offevents) {
+            Intent myintent = new Intent(Contact.this, Offline.class);
+            startActivity(myintent);
+            finish();
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_workshops) {
+            Intent myintent = new Intent(Contact.this, Workshop.class);
+            startActivity(myintent);
+            finish();
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_lectures) {
+            Intent myintent = new Intent(Contact.this, GuestSpeaker.class);
+            startActivity(myintent);
+            finish();
 
-        }*/
+        }
+        else if (id == R.id.Contacts) {
+
+
+        }
+        else if (id == R.id.nav_updates) {
+            Intent myintent = new Intent(Contact.this, Updates.class);
+            startActivity(myintent);
+            finish();
+
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

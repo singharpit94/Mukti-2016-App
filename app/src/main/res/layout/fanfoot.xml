@@ -28,9 +28,9 @@
             android:layout_height="200dp"
             android:capitalize="characters"
             android:text="Ever Thought of making your dream xv Ever Thought of bringing players from different league together \n\n GLUG brings you the chance to make your squad of your fantasies and win prizes while having fun"
-            android:textColor="#8B0000"
+            android:textColor="#4B0082"
             android:textStyle="bold"
-
+            android:fontFamily="sans-serif"
             android:textSize="20dp"
 
             android:layout_below="@+id/imageView1"
@@ -65,8 +65,8 @@
             android:textAlignment="center"
 
             android:text="Round 1 consists of pen and paper round comprising questions from football\n\n Round 2 will be an bidding round where each group has to make a team of 15"
-            android:textColor="#8B0000"
-
+            android:textColor="#4B0082"
+            android:fontFamily="sans-serif"
             android:textSize="20dp"
             android:textStyle="bold"
             android:layout_below="@+id/button1"

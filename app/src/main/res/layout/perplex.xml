@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="190dp"
 
-            android:background="@drawable/bts"
+            android:background="@drawable/perplex"
 
 
             android:layout_centerHorizontal="true"
@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:capitalize="characters"
-            android:text="Don't you hate it when the things you are passionate about fetch you no accolades? Well, this is an event where your genius in sports, music, movies, games and alike will help you unravel the biggest mystery of what lies behind the scenes "
+            android:text="Brain stormed by the monotony of academics? Here is your chance to prove that you can be more than just an engineer.\nBreak the common place paradigm and experience the refreshing tour into your intellect with our event PERPLEXITY "
             android:textColor="#4B0082"
             android:textStyle="bold"
             android:fontFamily="sans-serif"
@@ -64,7 +64,7 @@
             android:layout_height="200dp"
             android:textAlignment="center"
             android:fontFamily="sans-serif"
-            android:text="Teams of two shall answer questions to get their inputs and deduce what happened behind the scenes to the input to obtain the respective outputs."
+            android:text="1. Teams should consist of no more than three members.\n2. Scores of first round shall be carried forward to the subsequent rounds.\n3. Team with highest score in second round becomes the winner."
             android:textColor="#4B0082"
 
             android:textSize="20dp"

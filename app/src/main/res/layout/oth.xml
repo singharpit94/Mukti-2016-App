@@ -30,7 +30,7 @@
         android:text="The exhilaration is back! Gear up as we take you for an exciting quest for “treasure” during MUKTI.
 
 Come with us, and unravel the secret treasure hidden somewhere in the world of Free and Open Source Software (FOSS)."
-        android:textColor="#8B0000"
+        android:textColor="#4B0082"
         android:textStyle="bold"
 
         android:textSize="20dp"
@@ -70,7 +70,7 @@ Come with us, and unravel the secret treasure hidden somewhere in the world of F
 
 
 The hunt is on!"
-        android:textColor="#8B0000"
+        android:textColor="#4B0082"
 
         android:textSize="20dp"
         android:textStyle="bold"

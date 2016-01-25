@@ -5,17 +5,17 @@
         android:layout_height="match_parent"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:paddingTop="100dp"
+        android:paddingTop="65dp"
         android:orientation="vertical"
         android:background="@drawable/bor">
 
 
         <ImageView
             android:id="@+id/imageView1"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
 
-            android:background="@drawable/avlesh"
+            android:background="@drawable/keyno"
 
 
             android:layout_centerHorizontal="true"

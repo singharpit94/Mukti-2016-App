@@ -28,9 +28,9 @@
             android:layout_height="200dp"
             android:capitalize="characters"
             android:text="Do you know your language well? Using technical words  frequently? Then try to know the meaning of these words in your very own language. Come and try our event LIPI where all you need to do is to translate strings from ENGLISH into a medium of your choice."
-            android:textColor="#8B0000"
+            android:textColor="#4B0082"
             android:textStyle="bold"
-
+            android:fontFamily="sans-serif"
             android:textSize="20dp"
 
             android:layout_below="@+id/imageView1"
@@ -64,11 +64,9 @@
             android:layout_height="200dp"
             android:textAlignment="center"
 
-            android:text="1. Participate in teams of two.
-2. Pick up a language of your choice and translate all words into that medium.
-3. Team with the highest score becomes the winner."
-            android:textColor="#8B0000"
-
+            android:text="1. Participate in teams of two.\n2. Pick up a language of your choice and translate all words into that medium.\n3. Team with the highest score becomes the winner."
+            android:textColor="#4B0082"
+            android:fontFamily="sans-serif"
             android:textSize="20dp"
             android:textStyle="bold"
             android:layout_below="@+id/button1"

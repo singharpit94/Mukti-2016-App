@@ -1,5 +1,4 @@
 package com.example.arpit.mukti_2015_16;
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.net.Uri;
@@ -10,12 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-public class Incanity extends Fragment implements View.OnClickListener {
+public class Perplex extends Fragment implements View.OnClickListener {
     View view;
     Button b;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view=inflater.inflate(R.layout.incanity, container, false);
+        view=inflater.inflate(R.layout.perplex, container, false);
         b=(Button)view.findViewById(R.id.button2);
         b.setOnClickListener(this);
         return  view;
@@ -39,7 +38,7 @@ public class Incanity extends Fragment implements View.OnClickListener {
         Button dialogButton = (Button) dialog.findViewById(R.id.dialogButtonOK);
         // if button is clicked, close the custom dialog
         Button call=(Button)dialog.findViewById(R.id.cbutton);
-        call.setText("Arpit Jalan");
+        call.setText("Neetesh");
 
         dialogButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +51,7 @@ public class Incanity extends Fragment implements View.OnClickListener {
             public void onClick(View v) {
 
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel:9635946137"));
+                callIntent.setData(Uri.parse("tel:8670864497"));
                 startActivity(callIntent);
                 dialog.dismiss();
 

@@ -39,7 +39,7 @@ public class Lipi extends Fragment implements View.OnClickListener {
         Button dialogButton = (Button) dialog.findViewById(R.id.dialogButtonOK);
         // if button is clicked, close the custom dialog
         Button call=(Button)dialog.findViewById(R.id.cbutton);
-        call.setText("Arpit Singh");
+        call.setText("Archita");
 
         dialogButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +52,7 @@ public class Lipi extends Fragment implements View.OnClickListener {
             public void onClick(View v) {
 
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel:9832821697"));
+                callIntent.setData(Uri.parse("tel:9475378222"));
                 startActivity(callIntent);
                 dialog.dismiss();
 

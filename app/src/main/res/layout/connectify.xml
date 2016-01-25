@@ -28,9 +28,9 @@
             android:layout_height="200dp"
             android:capitalize="characters"
             android:text="Love solving puzzles? \n\n\Come and play the game of connecting the several pieces and forming the big picture which leads you to the answer!"
-            android:textColor="#8B0000"
+            android:textColor="#4B0082"
             android:textStyle="bold"
-
+            android:fontFamily="sans-serif"
             android:textSize="20dp"
 
             android:layout_below="@+id/imageView1"
@@ -67,8 +67,8 @@
             android:text=" 1.You will be given several image clues. You have to connect them together and think of the answer which the image clues together represent.
 2.Teams of 3 or less can participate.
 3.Based on your performance, top few teams will be qualifying for the next round."
-            android:textColor="#8B0000"
-
+            android:textColor="#4B0082"
+            android:fontFamily="sans-serif"
             android:textSize="20dp"
             android:textStyle="bold"
             android:layout_below="@+id/button1"

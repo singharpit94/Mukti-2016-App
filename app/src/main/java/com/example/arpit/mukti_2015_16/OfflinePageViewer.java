@@ -32,6 +32,9 @@ public class OfflinePageViewer extends FragmentStatePagerAdapter {
             case 4:
                 Fanfoot tab5=new Fanfoot();
                 return tab5;
+            case 5:
+                Perplex tab6=new Perplex();
+                return tab6;
             default:
                 return null;
         }

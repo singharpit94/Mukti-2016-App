@@ -39,13 +39,13 @@
                android:id="@+id/rl1"
 
                android:layout_weight="1"
-               android:background="@drawable/bor"
+
               >
           <ImageButton
               android:layout_width="match_parent"
               android:layout_height="75dp"
               android:id="@+id/imageButton1"
-              android:background="@drawable/onl"
+              android:background="@drawable/onllll"
               android:layout_marginLeft="0dp"
               android:layout_marginStart="0dp"
 
@@ -79,7 +79,7 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="@drawable/bor"
+
 
         >
 
@@ -88,7 +88,7 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:id="@+id/imageButton2"
-            android:background="@drawable/off"
+            android:background="@drawable/offffff"
             android:layout_marginLeft="0dp"
             android:layout_marginStart="0dp"
 

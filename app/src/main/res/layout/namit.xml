@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="350dp"
 
-            android:background="@drawable/namit"
+            android:background="@drawable/namitt"
 
 
             android:layout_centerHorizontal="true"
@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="65dp"
             android:capitalize="characters"
-            android:text="Namit Mahuavakar"
+            android:text="Namit Mahuvakar"
             android:textAlignment="center"
             android:textColor="#8B0000"
 

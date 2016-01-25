@@ -79,6 +79,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 Intent myintent = new Intent(MainActivity.this, Online.class);
                 startActivity(myintent);
+                finish();
             }
         });
         offline.setOnClickListener(new OnClickListener() {
@@ -86,6 +87,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 Intent myintent = new Intent(MainActivity.this, Offline.class);
                 startActivity(myintent);
+                finish();
             }
         });
         sponser.setOnClickListener(new OnClickListener() {
@@ -93,6 +95,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 Intent myintent = new Intent(MainActivity.this, Sponsers.class);
                 startActivity(myintent);
+                finish();
             }
         });
         map.setOnClickListener(new OnClickListener() {
@@ -111,6 +114,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 Intent myintent = new Intent(MainActivity.this, Contact.class);
                 startActivity(myintent);
+                finish();
             }
         });
         workshop.setOnClickListener(new OnClickListener() {
@@ -118,6 +122,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 Intent myintent = new Intent(MainActivity.this, Workshop.class);
                 startActivity(myintent);
+                finish();
             }
         });
         guest.setOnClickListener(new OnClickListener() {
@@ -125,6 +130,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 Intent myintent = new Intent(MainActivity.this, GuestSpeaker.class);
                 startActivity(myintent);
+                finish();
             }
         });
         update.setOnClickListener(new OnClickListener() {
@@ -132,6 +138,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {
                 Intent myintent = new Intent(MainActivity.this, Updates.class);
                 startActivity(myintent);
+                finish();
             }
         });
 
@@ -178,19 +185,45 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-     /*   if (id == R.id.nav_camara) {
+        if (id == R.id.nav_home) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_Sponsers) {
+            Intent myintent = new Intent(MainActivity.this, Sponsers.class);
+            startActivity(myintent);
+            finish();
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_onevents) {
+            Intent myintent = new Intent(MainActivity.this, Online.class);
+            startActivity(myintent);
+            finish();
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_offevents) {
+            Intent myintent = new Intent(MainActivity.this, Offline.class);
+            startActivity(myintent);
+            finish();
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_workshops) {
+            Intent myintent = new Intent(MainActivity.this, Workshop.class);
+            startActivity(myintent);
+            finish();
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_lectures) {
+            Intent myintent = new Intent(MainActivity.this, GuestSpeaker.class);
+            startActivity(myintent);
+            finish();
+        }
+        else if (id == R.id.Contacts) {
+            Intent myintent = new Intent(MainActivity.this, Contact.class);
+            startActivity(myintent);
+            finish();
 
-        }*/
+        }
+        else if (id == R.id.nav_updates) {
+            Intent myintent = new Intent(MainActivity.this, Updates.class);
+            startActivity(myintent);
+            finish();
+
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

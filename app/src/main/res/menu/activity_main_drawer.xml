@@ -20,7 +20,7 @@
             android:title="Guest Lectures" />
         <item android:id="@+id/Contacts" android:icon="@drawable/stackofphotos"
             android:title="Contacts" />
-        <item android:id="@+id/nav_register" android:icon="@drawable/key"
+        <item android:id="@+id/nav_updates" android:icon="@drawable/key"
             android:title="Updates" />
     </group>
 

@@ -29,9 +29,9 @@
             android:capitalize="characters"
             android:text="Break the misconception which you have in your minds that it is an event dedicated solely to coders.
 To give an enjoyable experience and supplement your knowledge is the crux behind this event"
-            android:textColor="#8B0000"
+            android:textColor="#4B0082"
             android:textStyle="bold"
-
+            android:fontFamily="sans-serif"
             android:textSize="20dp"
 
             android:layout_below="@+id/imageView1"
@@ -64,12 +64,10 @@ To give an enjoyable experience and supplement your knowledge is the crux behind
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:textAlignment="center"
-
+            android:fontFamily="sans-serif"
             android:text="1. The event will be conducted in two rounds, and the participants should participate in groups of
-three.
-2. Languages to be used: C, C++, Java
-3. Other rules are question specific and would be explicitly mentioned in the question papers."
-            android:textColor="#8B0000"
+three.\n2. Languages to be used: C, C++, Java\n"
+            android:textColor="#4B0082"
 
             android:textSize="20dp"
             android:textStyle="bold"
