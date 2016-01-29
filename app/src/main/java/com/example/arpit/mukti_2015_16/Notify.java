@@ -116,7 +116,7 @@ public class Notify extends Service {
 
                 try {
                     // Create a URL for the desired page
-                    URL updateURL = new URL("http://172.16.41.132:8000/notif");
+                    URL updateURL = new URL("http://onlinetreasurehunt.herokuapp.com/notif");
 
                     // Read all the text returned by the server
                     BufferedReader in = new BufferedReader(new InputStreamReader(updateURL.openStream()));
@@ -161,9 +161,9 @@ public class Notify extends Service {
                 if (title == null) {
                     //stopSelf();
                     // Toast.makeText(getApplicationContext(), "Arpit", Toast.LENGTH_SHORT).show();
-                    prefs= PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-                    editor=prefs.edit();
-                    update=prefs.getString("cu", "Singh");
+                   // prefs= PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                   // editor=prefs.edit();
+                   // update=prefs.getString("cu", "Singh");
                     //Toast.makeText(getApplicationContext(), update, Toast.LENGTH_SHORT).show();
 
                     // s1=prefs.getString("current",null);

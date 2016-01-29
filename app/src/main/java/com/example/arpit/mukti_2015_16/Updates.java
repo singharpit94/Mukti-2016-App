@@ -68,7 +68,7 @@ public class Updates extends AppCompatActivity implements NavigationView.OnNavig
 
             try {
                 // Create a URL for the desired page
-                URL updateURL = new URL("http://172.16.41.132:8000/notif");
+                URL updateURL = new URL("http://onlinetreasurehunt.herokuapp.com/notif");
 
                 // Read all the text returned by the server
                 BufferedReader in = new BufferedReader(new InputStreamReader(updateURL.openStream()));

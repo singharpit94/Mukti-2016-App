@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:capitalize="characters"
-            android:text="Abdur Rehman"
+            android:text="Abdur Rahman"
             android:textAlignment="center"
             android:textColor="#8B0000"
 

@@ -67,11 +67,12 @@ public class MainActivity extends AppCompatActivity
         key=preferences.getInt("current", -1);
         s1=preferences.getString("cu",null);
         if(s1==null){
-            Toast.makeText(getApplicationContext(), "Integer", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Registered", Toast.LENGTH_LONG).show();
             editor.putInt("current", 0);
             editor.putString("cu","Arpit");
             editor.commit();
         }
+
 
         startService(new Intent(getBaseContext(), Notify.class));
         online.setOnClickListener(new OnClickListener() {
